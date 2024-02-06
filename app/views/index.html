@@ -4,15 +4,15 @@
 
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout.html' %}
-<!--
+<!-- 
   In /views/layout.html you can:
-    - change the header and footer
+    - change the header and footer 
     - add custom CSS and JavaScript
 -->
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Bowel Cancer Screening System Prototype
+  NHS.UK prototype kit
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -33,30 +33,54 @@
 
       <!-- Change the page title here -->
       <h1>
-      BCSS prototype
-        <!--<span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>-->
+        NHS.UK prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
       </h1>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
       <p class="nhsuk-lede-text">
-        BCSS is a live database which records and stores all activity across the screening pathway, including call/recall services.
+        This kit lets you rapidly create HTML prototypes of NHS services.
       </p>
 
       <hr>
 
       <h2>
-        List of html pages
+        About this page
       </h2>
 
       <p>
-      <a href="/session-logout" class="nhsuk-link">session logout</a>
+        Use this page as the index for your project.
       </p>
+      
       <p>
-      <a href="/logout" class="nhsuk-link">logout</a>
+        You'll find the code for this page at <strong>/app/views/index.html</strong>.
       </p>
 
+      <p>
+        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
+      </p>
+
+      <hr>
+
+      <h2>
+        Get started
+      </h2>
+
+      <p>Get started by using the:</p>
+
+      <ul>
+        <li>
+          <a href="/docs/how-tos">how to guides</a>
+        </li>
+        <li>
+          <a href="/docs/page-templates">page templates</a>
+        </li>
+        <li>
+          code snippets for styles and components from the <a href="https://service-manual.nhs.uk/design-system">NHS digital service manual</a>
+        </li>
+      </ul>
 
       <!-- End of content -->
 
